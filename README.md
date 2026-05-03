@@ -128,3 +128,21 @@ Window valid when all characters matched
 Pattern: Sliding Window
 
 Solution: [Java code](./coding-problems/src/MinWindowSubString.java)
+
+🔹 LeetCode 1358 – Number of Substrings Containing All Three Characters
+
+Link: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/
+
+One-line memory:
+👉 “Use last seen indices → count = min(a,b,c) + 1”
+
+Core idea:
+
+Track last occurrence of ‘a’, ‘b’, ‘c’
+At each index, check if all are seen
+Take minimum of last positions
+Count all valid substrings ending at current index
+
+Pattern: Sliding Window / Last Seen Index
+
+Solution: [Java Code](./coding-problems/src/NumberOfSubstringsWithallThree.java)
