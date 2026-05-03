@@ -25,7 +25,7 @@ Core idea:
 Maintain window with ≤ k zeroes
 If zeroes > k → shrink from left
 
-Solution: [Code](./coding-problems/src/MaxConsecutiveOnes.java)
+Solution: [Java Code](./coding-problems/src/MaxConsecutiveOnes.java)
 
 🔹 LeetCode 3 – Longest Substring Without Repeating Characters
 
@@ -41,4 +41,21 @@ If char not present → expand
 If duplicate → shrink until valid
 Track max length
 
-Solution: [Code](./coding-problems/src/LongestSubStringWithoutRepeatingChars.java)
+Solution: [Java Code](./coding-problems/src/LongestSubStringWithoutRepeatingChars.java)
+
+🔹 LeetCode 904 – Fruit Into Baskets
+
+Link: https://leetcode.com/problems/fruit-into-baskets/
+
+One-line memory:
+👉 “At most 2 types → expand, more than 2 → shrink.”
+
+Core idea:
+
+Use sliding window
+Maintain a map to track fruit counts
+If distinct fruits ≤ 2 → expand
+If > 2 → shrink until valid
+Track maximum window length
+
+Solution: [Java Code](./coding-problems/src/FruitsIntoBasket.java)
