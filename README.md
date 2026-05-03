@@ -11,6 +11,8 @@ Taking from ends = leaving a middle block
 So:
 max score = total sum − minimum subarray of size (n − k)
 
+Solution: [Java Code](./coding-problems/src/MaxPointsFromCards.java)
+
 🔹 LeetCode 1004 – Max Consecutive Ones III
 
 Link: https://leetcode.com/problems/max-consecutive-ones-iii/
@@ -22,6 +24,8 @@ Core idea:
 
 Maintain window with ≤ k zeroes
 If zeroes > k → shrink from left
+
+Solution: [Code](./coding-problems/src/MaxConsecutiveOnes.java)
 
 🔹 LeetCode 3 – Longest Substring Without Repeating Characters
 
