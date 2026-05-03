@@ -1,11 +1,5 @@
 import java.util.*;
-/*
-LeetCode: 3
-Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-“If current character is not present → expand window
-If duplicate → shrink window until valid
-Update max length at each step”
- */
+
 public class LongestSubStringWithoutRepeatingChars {
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();
