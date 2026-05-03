@@ -146,3 +146,83 @@ Count all valid substrings ending at current index
 Pattern: Sliding Window / Last Seen Index
 
 Solution: [Java Code](./coding-problems/src/NumberOfSubstringsWithallThree.java)
+
+🔹 LeetCode 930 – Binary Subarrays With Sum
+
+Link: https://leetcode.com/problems/binary-subarrays-with-sum/
+
+🧠 One-line memory
+
+👉 “Exact sum in binary = AtMost(goal) − AtMost(goal−1)”
+
+💡 Core idea
+Array has only 0s and 1s → sum is monotonic
+
+Use sliding window to count:
+
+subarrays with sum ≤ k
+
+Then:
+
+exact sum = AtMost(goal) − AtMost(goal−1)
+
+Solution: [Java Code](./coding-problems/src/BinarySubArrayWithSum.java)
+
+🔹 LeetCode 1248 – Count Number of Nice Subarrays
+Link: https://leetcode.com/problems/count-number-of-nice-subarrays/
+One-line memory:
+👉 “Exactly K odds = AtMost(K) − AtMost(K−1)”
+Core idea:
+
+
+Count subarrays with ≤ k odd numbers using sliding window
+
+
+Maintain odd count in window
+
+
+Use (r - l + 1) to count valid subarrays
+
+
+Final answer = AtMost(k) − AtMost(k−1)
+
+
+Pattern: Sliding Window (Indirect / AtMost trick)
+Solution: [Java Code](./coding-problems/src/CountNiceSubarrays.java)
+
+🔹 LeetCode 992 – Subarrays with K Different Integers
+
+Link: https://leetcode.com/problems/subarrays-with-k-different-integers/
+
+One-line memory:
+👉 “Exactly K distinct = AtMost(K) − AtMost(K−1)”
+
+Core idea:
+
+Use sliding window to count subarrays with ≤ k distinct
+Maintain frequency map
+Shrink window when distinct > k
+Count valid subarrays using (r - l + 1)
+Final answer = AtMost(k) − AtMost(k−1)
+
+Pattern: Sliding Window (Indirect / AtMost trick)
+
+Solution: [Java Code](./coding-problems/src/SubarrayWithKDistinctIntegers.java)
+
+🔹 LeetCode 209 – Minimum Size Subarray Sum
+
+Link: https://leetcode.com/problems/minimum-size-subarray-sum/
+
+One-line memory:
+👉 “Sum ≥ target → shrink to minimize length.”
+
+Core idea:
+
+Use sliding window
+Expand window to reach sum ≥ target
+Shrink from left to minimize length
+Track smallest valid window
+
+Pattern: Sliding Window (Grow & Shrink)
+
+Solution: [Java Code](./coding-problems/src/MinSizeSubarraySum.java)
