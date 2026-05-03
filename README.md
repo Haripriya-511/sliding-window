@@ -36,4 +36,5 @@ Use sliding window
 If char not present → expand
 If duplicate → shrink until valid
 Track max length
-Solution: [Code](../LongestSubStringWithoutRepeatingChars.java)
+
+Solution: [Code](./coding-problems/src/LongestSubStringWithoutRepeatingChars.java)
