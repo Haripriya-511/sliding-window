@@ -226,3 +226,78 @@ Track smallest valid window
 Pattern: Sliding Window (Grow & Shrink)
 
 Solution: [Java Code](./coding-problems/src/MinSizeSubarraySum.java)
+
+LeetCode 2461 – Maximum Sum of Distinct Subarrays With Length K
+
+Link: https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/
+
+One-line memory:
+👉 “Size = k + no duplicates → track max sum.”
+
+Core idea:
+
+Use sliding window of fixed size k
+Maintain a set to ensure all elements are distinct
+Shrink window if duplicate or size > k
+When size == k, update max sum
+
+Pattern: Sliding Window (Fixed Size + Distinct)
+
+Solution: [Java Code](./coding-problems/src/MaxSumOfDistinctSubarrLengthK.java)
+
+🔹 LeetCode 713 – Subarray Product Less Than K
+
+Link: https://leetcode.com/problems/subarray-product-less-than-k/
+
+One-line memory:
+👉 “Product < k → expand, ≥ k → shrink, count = (r − l + 1)”
+
+Core idea:
+
+Use sliding window with running product
+Expand window by multiplying
+Shrink when product ≥ k
+Count valid subarrays using (r - l + 1)
+
+Pattern: Sliding Window (Multiplicative Constraint)
+
+Solution: [Java Code](./coding-problems/src/SubProdLessThanK.java)
+
+🔹 LeetCode 438 – Find All Anagrams in a String
+
+Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+One-line memory:
+👉 “Fixed window + frequency match → anagram.”
+
+Core idea:
+
+Use sliding window of size p.length()
+Maintain frequency array of required characters
+Expand window by adding right character
+Shrink when size exceeds
+Track matches using count
+If all matched → add start index
+
+Pattern: Sliding Window (Fixed Size + Frequency)
+
+Solution: [Java Code](./coding-problems/src/FindAllAnagarams.java)
+
+🔹 LeetCode 567 – Permutation in String
+
+Link: https://leetcode.com/problems/permutation-in-string/
+
+One-line memory:
+👉 “Fixed window + match count → permutation exists.”
+
+Core idea:
+
+Use sliding window of size s1.length()
+Maintain frequency array of required characters
+Expand window and update count
+Shrink when window exceeds size
+If all characters match → return true
+
+Pattern: Sliding Window (Fixed Size + Frequency)
+
+Solution: [Java Code](./coding-problems/src/PermutationInString.java)
