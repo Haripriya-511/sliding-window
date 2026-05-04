@@ -301,3 +301,31 @@ If all characters match → return true
 Pattern: Sliding Window (Fixed Size + Frequency)
 
 Solution: [Java Code](./coding-problems/src/PermutationInString.java)
+
+🔹 LeetCode 30 – Substring with Concatenation of All Words
+
+Link: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+
+🧠 One-line memory
+
+👉 “Slide in word-size chunks, match word frequency, shrink if extra.”
+
+💡 Core idea
+All words have same length → wordLen = k
+Total words = n
+Window size = k * n
+
+👉 Move in steps of k (not 1)
+👉 Match word frequency (not characters)
+
+⚙️ Approach
+Build target frequency map of words
+Loop from 0 → wordLen-1 (handle all alignments)
+Use sliding window:
+Extract word of size k
+If valid → add to window map
+If frequency exceeds → shrink using while
+If count == total words → store index
+If invalid word → reset window
+
+Solution: [Java Code](./coding-problems/src/SubstringwithConcatentionOfAll.java)
